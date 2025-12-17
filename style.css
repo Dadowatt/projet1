@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-color: #043915;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.icone{
+    height: 50px;
+    width: 50PX;
+    background-color: #08CB00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.title{
+    margin-left: 8px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav li a{
+    color: #fff;
+    margin: 0 10px;
+    text-transform: capitalize;
+}
+nav li a:hover{
+    color: orangered;
+}
+.desc{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+     url("images/b1.jpg") center / cover no-repeat;
+    height: 100vh;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 2.5rem;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px palevioletred;
+  }
+  100% {
+    transform: scale(1);
+}
+}
+.desc p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    width: 500px;
+    text-align: center;
+}
+.desc h1{
+    font-size: 3rem;
+}
+.btn{
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 40px;
+    width: 200px;
+    background-color: #08CB00;
+    margin-top: 1.5rem;
+    animation: pulse 1.5s infinite;
+}
+.btn a{
+    color: #fff;
+    font-weight: bold;
+}
+main{
+    padding: 10px 40px;
+}
+.sec{
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #fff;
+    box-shadow: 5px 5px 8px #555;
+    padding: 10px 5px;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    padding: 10px 20px;
+    line-height: 1.5rem;
+}
+body{
+    background-color: #fcf8f8;
+
+}
+.presentation p{
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.titre{
+    margin: 10px 0;
+}
+.langage{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.langage h4{
+    margin-left: 5px;
+}
+.langage img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: solid 2px #08CB00;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    height: 350px;
+}
+.icons{
+    margin-top: 8px;
+}
+.icons a{
+    font-size: 1.3rem;
+}
+.cordonnee{
+    line-height: 28px;
+}
+.cordonnee h3{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.cordonnee h3, i{
+    color: #08CB00;
+}
+.cordonnee span{
+    margin-right: 7px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+form input{
+    height: 40px;
+}
+form input, textarea{
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px 0;
+    outline: none;
+    padding-left: 15px;
+    border: none;
+    border: solid 1px #043915;
+}
+form button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #08CB00;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+.titre{
+    color: #043915;
+}
+footer{
+    height: 70px;
+    background-color: #043915;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+button:hover{
+    background-color: #043915;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #043915;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header{
+        align-items: center;
+    }
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .desc{
+        background: #007E6E;
+    }
+    .desc p{
+        width: 90%;
+    }
+    .contact{
+        flex-direction: column;
+        height: auto;
+    }
+    form{
+        width: 100%;
+    }
+    .description{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .presentation p{
+        font-size: 16px;
+        margin-top: 3%;
+    }
+}
